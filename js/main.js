@@ -26,10 +26,10 @@ $(document).ready(function() {
      * LightVibrant #f3ccb4
      */
                 console.log(swatches['Muted'].getHex());
-        $(".cabAlbum").css('background',swatches['Muted'].getHex())
-        $(".cabAlbum").css('color',swatches['DarkVibrant'].getHex())
-        $(".cabAlbum h2").css('color',swatches['DarkVibrant'].getHex())
-        $(".cabAlbum .detalles").css('color',swatches['DarkVibrant'].getHex())
+        $(".cabAlbum").css('background',swatches['Vibrant'].getHex())
+        $(".cabAlbum").css('color',swatches['Muted'].getHex())
+        $(".cabAlbum h2").css('color',swatches['DarkMuted'].getHex())
+        $(".cabAlbum .detalles").css('color',swatches['DarkMuted'].getHex())
 //        $(".cabAlbum").css("background-image","img/250x250.jpg");
                 });
     
