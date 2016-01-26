@@ -16,7 +16,7 @@
             background-position: 0px -48px;
             height: 24px;
             width: 117px;
-            background: transparent url("http://e-cdn-files.deezer.com/images/compass/sprites/deezer/common/logos-sc718304118.png") no-repeat scroll 0% 0%;
+            background: transparent url(../img/logos.png) no-repeat scroll 0% 0%;
             display: inline-block;
         }
         
@@ -76,9 +76,14 @@
             .icono{
                 float: right;
                 padding-top: 20px;
-                span{
-                    color: #C2C2CA;
+                a{
+                    @extend .linkCustom; 
+                    
+                    span{
+                        color: #C2C2CA;
+                    }
                 }
+                
             }
         }
         .sucripcion{
@@ -204,7 +209,7 @@
                     margin-top: 45px;
                     .privacidad{
                         height: 30px;
-                        border-bottom: 1px solid #999;
+                        border-bottom: 1px solid #ccc;
                         p{
                             float: left;
                         }
@@ -259,6 +264,7 @@
         .menuP{
             width: 100%;
             height: 36px;
+            border-bottom: 1px solid #ccc;
             ul{
                 list-style-type: none;
                 li{
@@ -283,6 +289,54 @@
                     .active{
                         color: #222;
                         border-bottom: 3px solid #007FEB;
+                    }
+                }
+            }
+        }
+        
+        .menuSec{
+            background: #EFEFF2;
+            height: 65px;
+            padding:25px 10px 10px; 
+            
+            span{
+                font-size: 14px;
+            }
+            .derecha{
+                float: right;
+                width: 261px;
+                .dropdown{
+                    width: 80px;
+                    float: left;
+                    .caret{
+                        color: #007FEB;
+                    }
+                }
+                .buscador{
+                    width: 180px;
+                }
+            }
+        }
+        
+        .listado{
+            .table{
+                color: #888;
+                tbody > tr:nth-of-type(2n+1) {
+                    background-color: #F7F6F7;
+                }
+                tbody>tr:hover{background-color:#E8E8EC}
+                tbody>tr{height: 30px;}
+                tbody > tr > td{ padding: 4px 8px; }
+                .cabecera{
+                    background: #A2A2AD !important;
+                    color: #fff;
+                    height: 30px;
+                    .durac{
+                        width: 70px;
+                    }
+                    .anade, .fav{
+                        width: 40px;
+                        
                     }
                 }
             }

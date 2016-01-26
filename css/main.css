@@ -22,7 +22,7 @@
   background-position: 0px -48px;
   height: 24px;
   width: 117px;
-  background: transparent url("http://e-cdn-files.deezer.com/images/compass/sprites/deezer/common/logos-sc718304118.png") no-repeat scroll 0% 0%;
+  background: transparent url(../img/logos.png) no-repeat scroll 0% 0%;
   display: inline-block;
 }
 
@@ -35,14 +35,14 @@
   font-size: 16px;
 }
 
-.wrapper .menu .linkCustom, .wrapper .menu .enlaces1 li a, .wrapper .menu .enlaces2 li a, .wrapper .menu .user .imagen a, .wrapper .menu .enlaces2 ul li a {
+.wrapper .menu .linkCustom, .wrapper .menu .enlaces1 li a, .wrapper .menu .enlaces2 li a, .wrapper .menu .user .imagen a, .wrapper .menu .user .icono a, .wrapper .menu .enlaces2 ul li a {
   display: block;
   color: #C2C2CA;
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
 }
 
-.wrapper .menu .linkCustom:hover, .wrapper .menu .enlaces1 li a:hover, .wrapper .menu .enlaces2 li a:hover, .wrapper .menu .user .imagen a:hover {
+.wrapper .menu .linkCustom:hover, .wrapper .menu .enlaces1 li a:hover, .wrapper .menu .enlaces2 li a:hover, .wrapper .menu .user .imagen a:hover, .wrapper .menu .user .icono a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -94,7 +94,7 @@
   padding-top: 20px;
 }
 
-.wrapper .menu .user .icono span {
+.wrapper .menu .user .icono a span {
   color: #C2C2CA;
 }
 
@@ -247,7 +247,7 @@
 
 .wrapper .cuerpo .cabAlbum .infoAlbum .detalles .privacidad {
   height: 30px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ccc;
 }
 
 .wrapper .cuerpo .cabAlbum .infoAlbum .detalles .privacidad p {
@@ -308,6 +308,7 @@
 .wrapper .cuerpo .menuP {
   width: 100%;
   height: 36px;
+  border-bottom: 1px solid #ccc;
 }
 
 .wrapper .cuerpo .menuP ul {
@@ -339,4 +340,66 @@
 .wrapper .cuerpo .menuP ul li .active {
   color: #222;
   border-bottom: 3px solid #007FEB;
+}
+
+.wrapper .cuerpo .menuSec {
+  background: #EFEFF2;
+  height: 65px;
+  padding: 25px 10px 10px;
+}
+
+.wrapper .cuerpo .menuSec span {
+  font-size: 14px;
+}
+
+.wrapper .cuerpo .menuSec .derecha {
+  float: right;
+  width: 261px;
+}
+
+.wrapper .cuerpo .menuSec .derecha .dropdown {
+  width: 80px;
+  float: left;
+}
+
+.wrapper .cuerpo .menuSec .derecha .dropdown .caret {
+  color: #007FEB;
+}
+
+.wrapper .cuerpo .menuSec .derecha .buscador {
+  width: 180px;
+}
+
+.wrapper .cuerpo .listado .table {
+  color: #888;
+}
+
+.wrapper .cuerpo .listado .table tbody > tr:nth-of-type(2n+1) {
+  background-color: #F7F6F7;
+}
+
+.wrapper .cuerpo .listado .table tbody > tr:hover {
+  background-color: #E8E8EC;
+}
+
+.wrapper .cuerpo .listado .table tbody > tr {
+  height: 30px;
+}
+
+.wrapper .cuerpo .listado .table tbody > tr > td {
+  padding: 4px 8px;
+}
+
+.wrapper .cuerpo .listado .table .cabecera {
+  background: #A2A2AD !important;
+  color: #fff;
+  height: 30px;
+}
+
+.wrapper .cuerpo .listado .table .cabecera .durac {
+  width: 70px;
+}
+
+.wrapper .cuerpo .listado .table .cabecera .anade, .wrapper .cuerpo .listado .table .cabecera .fav {
+  width: 40px;
 }
