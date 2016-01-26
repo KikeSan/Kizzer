@@ -178,6 +178,21 @@
         margin-left: 220px;
         .cabAlbum{
             height: 250px;
+            /*&::before{
+                content: "";
+                position: absolute;
+                z-index: 0;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                background: transparent url("../img/250x250.jpg") no-repeat scroll 0% 50%;
+                opacity: 0.1;
+                background-size: cover;
+                height: 250px;
+            }*/
+//            background: red;
+//            color: #fff;
             .conteFoto{
                 width: 200px;
                 height: 200px;
