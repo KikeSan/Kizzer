@@ -1,0 +1,292 @@
+.wrapper{
+    background: #EFEFF2;
+    position: relative;
+    
+    .menu{
+        background: #23232C;
+        height: 100%;
+        position: absolute;
+        width: 220px;
+        .contelogo{
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .logo{
+            background-position: 0px -48px;
+            height: 24px;
+            width: 117px;
+            background: transparent url("http://e-cdn-files.deezer.com/images/compass/sprites/deezer/common/logos-sc718304118.png") no-repeat scroll 0% 0%;
+            display: inline-block;
+        }
+        
+        .input-group{
+            width: 80%;
+            margin: 15px 10%;
+            span{
+                font-size: 16px;
+            }
+        }
+        /*-----------------*/
+        .linkCustom{
+            display: block;
+            color: #C2C2CA;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            &:hover{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        /*----------------*/
+        .enlaces1{
+            ul{ list-style-type: none; padding: 0; }
+            li{ 
+                height: 32px;
+                a{
+                    @extend .linkCustom;
+                    padding-left: 10%;
+                    line-height: 32px;
+                    &:hover{
+                        background: #1C1C25;
+                    }
+                }
+            }
+        }
+        .user{
+            border-top: 1px solid #666;
+            width: 80%;
+            margin-left: 10%;
+            height: 66px;
+            .imagen{
+                float: left;
+                padding-top: 16px;
+                img{
+                    width: 34px;
+                    border: 2px solid #333;
+                    border-radius: 17px 17px 17px 17px;
+                    -moz-border-radius: 17px 17px 17px 17px;
+                    -webkit-border-radius: 17px 17px 17px 17px;
+                }
+                a{
+                    @extend .linkCustom; 
+                    text-transform:capitalize;
+                }
+            }
+            .icono{
+                float: right;
+                padding-top: 20px;
+                span{
+                    color: #C2C2CA;
+                }
+            }
+        }
+        .sucripcion{
+            text-align: center;
+            .btn{
+                width: 80%;
+                background-color: #007FEB;
+                &:hover{
+                    background-color: #0B66CD;
+                }
+            }
+        }
+        .enlaces2{
+            @extend .enlaces1;
+            margin-top: 15px;
+            ul{
+                li{
+                    height: 35px;
+                    a{
+                        @extend .linkCustom;
+                        padding-left: 10%;
+                        line-height: 35px;
+                        text-transform: none;
+                        &:hover{
+                            background: #1C1C25;
+                        }
+                        span{
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .cancion{
+            bottom: 0;
+            position: absolute;
+            background: #23232C;
+            img{
+                max-width: 220px;
+            }
+            .controles{
+                height: 50px;
+                text-align: center;
+                margin-top: 7px;
+                .play{
+                    height: 50px;
+                    width: 150px;
+                    margin-left: 35px;
+                    a{
+                        color: #fff;
+                        width: 50px;
+                        height: 50px;
+                        display: block;
+                        float: left;
+                        span{
+                            font-size: 18px;
+                            padding-top: 13px;
+                        }
+                        .glyphicon-play{
+                            font-size: 32px;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+                .reproduccion{
+                    height: 20px;
+                    width: 100%;
+                    a{
+                        color: #C2C2CA;
+                        width: 25%;
+                        height: 30px;
+                        display: block;
+                        float: left;
+                        &:hover{
+                            color: #fff;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }  
+                    .active{
+                        color: #007FEB;
+                    }
+                }
+            }
+        }
+    }
+    .cuerpo{
+        background: #fff;
+        position: absolute;
+        margin-left: 220px;
+        .cabAlbum{
+            height: 250px;
+            .conteFoto{
+                width: 200px;
+                height: 200px;
+                margin: 30px 30px 20px 30px;
+                float: left;
+                img{
+                    width: 100%;
+                }
+            }
+            .infoAlbum{
+                float: left;
+                width: 70%;
+                
+                h1{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 28px;
+                    letter-spacing: -1.5px;
+                    margin-top: 35px;
+                }
+                h2{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 18px;
+                    letter-spacing: -1.5px;
+                    color: #999;
+                    margin: 0;
+                }
+                .detalles{
+                    color: #999;
+                    margin-top: 45px;
+                    .privacidad{
+                        height: 30px;
+                        border-bottom: 1px solid #999;
+                        p{
+                            float: left;
+                        }
+                        .separador{
+                            margin: 0 15px;
+                        }    
+                    }
+                    .linkBoton{
+                        display: block;
+                        color: #C2C2CA;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        text-transform: none;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    .opciones{
+                        margin-top: 10px;
+                        a{
+                            @entend .linkBoton;
+                            width: 100px;
+                            /*&:hover{
+                                color: #fff;
+                            }*/
+                        }
+                        .editar{
+                            width: 40px;
+                            margin-left: 8px;
+                        }
+                        .duracion{
+                            float: right;
+                            width: 140px;
+                            font-size: 12px;
+                            text-align: center;
+                            .cantidad{
+                                width: 60px;
+                                float: left;
+                                padding-right: 12px;
+                                border-right: 1px solid #aaa;
+                            }
+                            .duracell{
+                                width: 70px;
+                                float: right;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        
+        .menuP{
+            width: 100%;
+            height: 36px;
+            ul{
+                list-style-type: none;
+                li{
+                    display: inline;
+                    margin-right: 40px;
+                    float: left;
+                    text-align: center;
+                    a{
+                        display: block;
+                        font-size: 16px;
+                        color: #999;
+                        font-weight: bold;
+                        width: 130px;
+                        height: 36px;
+                        &:hover{
+                            text-decoration: none;
+                            color: #222;
+                            border-bottom: 3px solid #007FEB;
+                        }
+                        
+                    }
+                    .active{
+                        color: #222;
+                        border-bottom: 3px solid #007FEB;
+                    }
+                }
+            }
+        }
+    }
+}
+
