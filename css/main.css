@@ -20,9 +20,9 @@
 
 .wrapper .menu .logo {
   background-position: 0px -48px;
-  height: 24px;
-  width: 117px;
-  background: transparent url(../img/logos.png) no-repeat scroll 0% 0%;
+  height: 94px;
+  width: 94px;
+  background: transparent url(../img/logo.png) no-repeat scroll 0% 0%;
   display: inline-block;
 }
 
@@ -401,6 +401,14 @@
 
 .wrapper .cuerpo .listado .table tbody > tr > td {
   padding: 4px 8px;
+}
+
+.wrapper .cuerpo .listado .table .namePlay {
+  color: #888;
+}
+
+.wrapper .cuerpo .listado .table .namePlay:hover {
+  color: #007FEB;
 }
 
 .wrapper .cuerpo .listado .table .cabecera {

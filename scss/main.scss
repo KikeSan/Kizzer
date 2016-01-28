@@ -14,9 +14,9 @@
         }
         .logo{
             background-position: 0px -48px;
-            height: 24px;
-            width: 117px;
-            background: transparent url(../img/logos.png) no-repeat scroll 0% 0%;
+            height: 94px;
+            width: 94px;
+            background: transparent url(../img/logo.png) no-repeat scroll 0% 0%;
             display: inline-block;
         }
         
@@ -342,6 +342,12 @@
                 tbody>tr:hover{background-color:#E8E8EC}
                 tbody>tr{height: 30px;}
                 tbody > tr > td{ padding: 4px 8px; }
+                .namePlay{
+                    color: #888;
+                    &:hover{
+                        color: #007FEB;
+                    }
+                }
                 .cabecera{
                     background: #A2A2AD !important;
                     color: #fff;
