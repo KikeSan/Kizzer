@@ -1,0 +1,416 @@
+{
+    "data": [
+        {
+            "album": {
+                    "id": 1,
+                    "Nombre": "The Peanuts Movie - Original Soundtrack",
+                    "Artista": "Meghan Trainor, Flo Rida, Christophe Beck...",
+                    "Cover": "img/album_1.jpg",
+                    "lista":[
+                        {
+                            "canc":"Linus and Lucy",
+                            "dura":"03:04"
+                        },
+                        {
+                            "canc":"Better When I'm Dancin",
+                            "dura":"02:56"
+                        },
+                        {
+                            "canc":"That's What I Like (featuring Fitz)",
+                            "dura":"03:15"
+                        },
+                        {
+                            "canc":"Skating",
+                            "dura":"02:23"
+                        },
+                        {
+                            "canc":"Christmas Time Is Here",
+                            "dura":"02:45"
+                        },
+                        {
+                            "canc":"Snow Day",
+                            "dura":"02:26"
+                        },
+                        {
+                            "canc":"Fifi's Theme",
+                            "dura":"01:13"
+                        },
+                        {
+                            "canc":"Charlie Brown in Love",
+                            "dura":"01:38"
+                        },
+                        {
+                            "canc":"Wingwalking",
+                            "dura":"02:18"
+                        },
+                        {
+                            "canc":"The Library",
+                            "dura":"01:10"
+                        },
+                        {
+                            "canc":"Good Ol' Charlie Brown",
+                            "dura":"02:53"
+                        }
+                    ]
+                }
+        },
+        {
+            "album": {
+                    "id": 2,
+                    "Nombre": "Continued Silence EP",
+                    "Artista": "Imagine Dragons",
+                    "Cover": "img/album_2.jpg",
+                    "lista":[
+                        {
+                            "canc":"Radioactive",
+                            "dura":"03:06"
+                        },
+                        {
+                            "canc":"Demons",
+                            "dura":"02:27"
+                        },
+                        {
+                            "canc":"On Top of the World",
+                            "dura":"03:12"
+                        },
+                        {
+                            "canc":"Round and Round",
+                            "dura":"03:17"
+                        },
+                        {
+                            "canc":"It's Time",
+                            "dura":"04:00"
+                        },
+                        {
+                            "canc":"My Fault",
+                            "dura":"02:56"
+                        }
+                    ]
+                }
+        },
+        {
+            "album": {
+                "id": 3,
+                "Nombre": "Love",
+                "Artista": "The Beatles",
+                "Cover": "img/album_3.jpg",
+                "lista":[
+                    {
+                        "canc":"Because",
+                        "dura":"02:44"
+                    },
+                    {
+                        "canc":"Get Back",
+                        "dura":"02:05"
+                    },
+                    {
+                        "canc":"Glass Onion",
+                        "dura":"01:20"
+                    },
+                    {
+                        "canc":"Eleanor Rigby / Julia (Transición)",
+                        "dura":"03:05"
+                    },
+                    {
+                        "canc":"I Am the Walrus",
+                        "dura":"04:28"
+                    },
+                    {
+                        "canc":"I Want to Hold Your Hand",
+                        "dura":"01:22"
+                    },
+                    {
+                        "canc":"Drive My Car / The Word / What You're Doing",
+                        "dura":"01:54"
+                    },
+                    {
+                        "canc":"Gnik Nus",
+                        "dura":"00:55"
+                    },
+                    {
+                        "canc":"Something / Blue Jay Way (Transición)",
+                        "dura":"03:29"
+                    },
+                    {
+                        "canc":"Help!",
+                        "dura":"02:18"
+                    },
+                    {
+                        "canc":"Blackbird / Yesterday",
+                        "dura":"02:31"
+                    },
+                    {
+                        "canc":"Strawberry Fields Forever",
+                        "dura":"04:31"
+                    },
+                    {
+                        "canc":"Lucy In the Sky With Diamonds",
+                        "dura":"04:10"
+                    },
+                    {
+                        "canc":"Octopus's Garden",
+                        "dura":"03:18"
+                    },
+                    {
+                        "canc":"Lady Madonna",
+                        "dura":"02:56"
+                    },
+                    {
+                        "canc":"Back in the U.S.S.R.",
+                        "dura":"03:46"
+                    },
+                    {
+                        "canc":"All You Need is Love",
+                        "dura":"03:40"
+                    }
+                ]
+            }
+        },
+        {
+            "album": {
+                    "id": 4,
+                    "Nombre": "Nevermind",
+                    "Artista": "Nirvana",
+                    "Cover": "img/album_4.jpg",
+                    "lista":[
+                        {
+                            "canc":"Smells Like Teen Spirit",
+                            "dura":"05:01"
+                        },
+                        {
+                            "canc":"In bloom",
+                            "dura":"04:14"
+                        },
+                        {
+                            "canc":"Come as you are",
+                            "dura":"03:39"
+                        },
+                        {
+                            "canc":"Breed",
+                            "dura":"03:03"
+                        },
+                        {
+                            "canc":"Lithium",
+                            "dura":"04:17"
+                        },
+                        {
+                            "canc":"Polly",
+                            "dura":"02:57"
+                        },
+                        {
+                            "canc":"Territorial Pissings",
+                            "dura":"02:22"
+                        },
+                        {
+                            "canc":"Drain you",
+                            "dura":"03:43"
+                        },
+                        {
+                            "canc":"Lounge act",
+                            "dura":"02:36"
+                        },
+                        {
+                            "canc":"Stay away",
+                            "dura":"03:32"
+                        }
+                    ]
+                }
+        },
+        {
+            "album": {
+                    "id": 5,
+                    "Nombre": "Visionary",
+                    "Artista": "Farruko",
+                    "Cover": "img/album_5.jpg",
+                    "lista":[
+                        {
+                            "canc":"Visionary",
+                            "dura":"04:17"
+                        },
+                        {
+                            "canc":"Fantasy",
+                            "dura":"03:31"
+                        },
+                        {
+                            "canc":"Obsesionado",
+                            "dura":"03:31"
+                        },
+                        {
+                            "canc":"Intimidad",
+                            "dura":"04:02"
+                        },
+                        {
+                            "canc":"HMB",
+                            "dura":"03:26"
+                        },
+                        {
+                            "canc":"Papi Champú",
+                            "dura":"04:15"
+                        },
+                        {
+                            "canc":"Back to the Future",
+                            "dura":"04:03"
+                        },
+                        {
+                            "canc":"Chillax",
+                            "dura":"03:17"
+                        },
+                        {
+                            "canc":"Never let you go",
+                            "dura":"03:21"
+                        },
+                        {
+                            "canc":"Illusion",
+                            "dura":"03:39"
+                        },
+                        {
+                            "canc":"Te va a doler",
+                            "dura":"03:28"
+                        },
+                        {
+                            "canc":"Power",
+                            "dura":"03:50"
+                        }
+                    ]
+                }
+        },
+        {
+            "album": {
+                    "id": 6,
+                    "Nombre": "Confessions on a Dance Floor",
+                    "Artista": "Madonna",
+                    "Cover": "img/album_6.jpg",
+                    "lista":[
+                        {
+                            "canc":"Hung Up",
+                            "dura":"05:36"
+                        },
+                        {
+                            "canc":"Get Together",
+                            "dura":"05:30"
+                        },
+                        {
+                            "canc":"Sorry",
+                            "dura":"04:43"
+                        },
+                        {
+                            "canc":"Future Lovers",
+                            "dura":"04:51"
+                        },
+                        {
+                            "canc":"I Love New York",
+                            "dura":"04:11"
+                        },
+                        {
+                            "canc":"Let It Will Be",
+                            "dura":"04:18"
+                        },
+                        {
+                            "canc":"Forbidden Love",
+                            "dura":"04:22"
+                        }
+                    ]
+                }
+        },
+        {
+            "album": {
+                    "id": 7,
+                    "Nombre": "Americana",
+                    "Artista": "The Offspring",
+                    "Cover": "img/album_7.jpg",
+                    "lista":[
+                        {
+                            "canc":"Welcome",
+                            "dura":"00:09"
+                        },
+                        {
+                            "canc":"Have You Ever",
+                            "dura":"03:56"
+                        },
+                        {
+                            "canc":"Staring at the Sun",
+                            "dura":"02:13"
+                        },
+                        {
+                            "canc":"Pretty Fly",
+                            "dura":"03:08"
+                        },
+                        {
+                            "canc":"The Kids Aren't Alright",
+                            "dura":"03:00"
+                        },
+                        {
+                            "canc":"Feelings",
+                            "dura":"02:51"
+                        },
+                        {
+                            "canc":"She's Got Issues",
+                            "dura":"03:48"
+                        },
+                        {
+                            "canc":"Walla Walla",
+                            "dura":"02:57"
+                        }
+                    ]
+                }
+        },
+        {
+            "album": {
+                    "id": 8,
+                    "Nombre": "My everything",
+                    "Artista": "Ariana grande",
+                    "Cover": "img/album_8.jpg",
+                    "lista":[
+                        {
+                            "canc":"Intro",
+                            "dura":"01:20"
+                        },
+                        {
+                            "canc":"Problem",
+                            "dura":"03:13"
+                        },
+                        {
+                            "canc":"One Last Time",
+                            "dura":"03:17"
+                        },
+                        {
+                            "canc":"Why Try",
+                            "dura":"03:31"
+                        },
+                        {
+                            "canc":"Break Free",
+                            "dura":"03:31"
+                        },
+                        {
+                            "canc":"Best Mistake",
+                            "dura":"03:53"
+                        },
+                        {
+                            "canc":"Be My Baby",
+                            "dura":"03:36"
+                        },
+                        {
+                            "canc":"Break Your Heart Right Back",
+                            "dura":"04:13"
+                        },
+                        {
+                            "canc":"Love Me Harder",
+                            "dura":"03:56"
+                        },
+                        {
+                            "canc":"Just a Little Bit of Your Heart",
+                            "dura":"03:51"
+                        },
+                        {
+                            "canc":"Hands on Me",
+                            "dura":"03:13"
+                        },
+                        {
+                            "canc":"My Everything",
+                            "dura":"02:48"
+                        }
+                    ]
+                }
+        }
+    ]
+}

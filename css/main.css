@@ -8,6 +8,7 @@
   height: 100%;
   position: absolute;
   width: 220px;
+  z-index: 20;
   /*-----------------*/
   /*----------------*/
 }
@@ -123,6 +124,7 @@
   padding-left: 10%;
   line-height: 35px;
   text-transform: none;
+  text-decoration: none;
 }
 
 .wrapper .menu .enlaces2 ul li a:hover {
@@ -199,27 +201,211 @@
   color: #007FEB;
 }
 
-.wrapper .cuerpo {
-  background: #fff;
+@keyframes example {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.wrapper .modal .menu2 {
+  height: 100%;
+  position: absolute;
+  width: 300px;
+  background: #F8F8FA;
+  left: -300px;
+}
+
+.wrapper .modal .menu2 .contelogo {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.wrapper .modal .menu2 .contelogo .logo {
+  background-position: 0px -48px;
+  height: 94px;
+  width: 94px;
+  background: transparent url(../img/logo_b.png) no-repeat scroll 0% 0%;
+  display: inline-block;
+}
+
+.wrapper .modal .menu2 .cantAlbum {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.wrapper .modal .menu2 .cantAlbum p {
+  float: left;
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.wrapper .modal .menu2 .cantAlbum .dropdown {
+  float: right;
+  margin-right: 10px;
+  margin-top: 11px;
+}
+
+.wrapper .modal .menu2 .cantAlbum .dropdown .btn {
+  height: 26px;
+}
+
+.wrapper .modal .menu2 .cantAlbum .dropdown .btn .glyphicon {
+  top: -2px;
+}
+
+.wrapper .modal .menu2 .cantAlbum .dropdown .btn .caret {
+  margin-top: -8px;
+  margin-left: 3px;
+  color: #007FEB;
+}
+
+.wrapper .modal .menu2 .listAlbum {
+  margin-top: 25px;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum {
+  display: block;
+  height: 56px;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum .fotoCover {
+  width: 56px;
+  float: left;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum .playHover {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 18px;
+  border: 2px solid #999;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/play.png");
+  display: none;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum p {
+  padding: 0;
+  margin: 0 0 0 12px;
+  float: left;
+  margin-top: 3px;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum .Talbum {
+  font-size: 14px;
+  width: 200px;
+  line-height: 15px;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum .Tartista {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum:hover {
+  background: #EFEFF2;
+  text-decoration: none;
+}
+
+.wrapper .modal .menu2 .listAlbum .btnAlbum:hover .playHover {
+  display: block;
+}
+
+.wrapper .home {
   position: absolute;
   margin-left: 220px;
 }
 
+.wrapper .home .content {
+  width: 90%;
+  margin: 30px 5% 0 5%;
+  height: 800px;
+  background: #ddd;
+}
+
+.wrapper .home .content .banner {
+  width: 100%;
+  height: 250px;
+  background: grey;
+}
+
+.wrapper .home .content .menuP {
+  margin-top: 25px;
+}
+
+.wrapper .home .content .menuP .item {
+  height: 54px;
+  line-height: 54px;
+  margin: 0;
+}
+
+.wrapper .home .content .menuP .item .btnMenu {
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #555;
+  font-size: 18px;
+  letter-spacing: .7px;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.wrapper .home .content .menuP .item .btnMenu .glyphicon {
+  color: #999;
+}
+
+.wrapper .home .content .menuP .item .btnMenu .glyphicon-menu-right {
+  float: right;
+  margin: 15px 15px;
+}
+
+.wrapper .home .content .menuP .item .btnMenu:hover {
+  color: #222;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .home .content .menuP .item .btnMenu:hover .glyphicon {
+  color: #222;
+}
+
+.wrapper .home .content .menuP .itemCentral {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.wrapper .home .content .separador {
+  margin-top: 40px;
+  border-top: 1px solid #bbb;
+}
+
+.wrapper .home .content .separador p {
+  background: #EFEFF2;
+}
+
+.wrapper .cuerpo {
+  background: #fff;
+  position: absolute;
+  margin-left: 220px;
+  display: none;
+}
+
 .wrapper .cuerpo .cabAlbum {
   height: 250px;
-  /*&::before{
-                content: "";
-                position: absolute;
-                z-index: 0;
-                top: 0px;
-                bottom: 0px;
-                left: 0px;
-                right: 0px;
-                background: transparent url("../img/250x250.jpg") no-repeat scroll 0% 50%;
-                opacity: 0.1;
-                background-size: cover;
-                height: 250px;
-            }*/
 }
 
 .wrapper .cuerpo .cabAlbum .conteFoto {

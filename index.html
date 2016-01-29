@@ -48,7 +48,7 @@
                         <ul>
                             <li><a href="#" class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Canciones favoritas</a></li>
                             <li><a href="#" class=""><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Playlist</a></li>
-                            <li><a href="#" class=""><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Álbumes</a></li>
+                            <li><a href="#" class="btnAlbumes" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Álbumes</a></li>
                             <li><a href="#" class=""><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Aplicaciones</a></li>
                         </ul>
                     </div>
@@ -72,6 +72,50 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="menu2">
+                        <div class="contelogo">
+                            <a href="#" class="logo"></a>
+                        </div>
+                        <div class="cantAlbum">
+                            <p>Álbumes (8)</p>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">A-Z (por artista)</a></li>
+                                    <li><a href="#">A-Z (por álbum)</a></li>
+                                    <li><a href="#">Añadido recientemente</a></li>
+                                    <li><a href="#">Más escuchados</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listAlbum">
+                            <!--<a href="" class="btnAlbum">
+                               <img src="img/250x250_1.jpg" alt="" class="fotoCover">
+                               <p class="Talbum">Nombre Album</p>
+                               <p class="Tartista">Nombre Artista</p>
+                                <div class="playHover"></div>
+                            </a>-->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home">
+                    <div class="content">
+                       <div class="banner"></div>
+                        <div class="row menuP">
+                            <div class="col-sm-4 item"><a href="#" class="btnMenu"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Top Playlists<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                            <div class="col-sm-4 item itemCentral"><a href="#" class="btnMenu"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Explora<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                            <div class="col-sm-4 item"><a href="#" class="btnMenu"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Recomendado<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        </div>
+                        <div class="separador text-center"><p>Playlists seleccionados para ti</p></div>
+                    </div>
+                </div>
+                
                 <div class="cuerpo">
                     <div class="cabAlbum">
                         <div class="conteFoto">

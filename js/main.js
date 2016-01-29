@@ -4,40 +4,15 @@ $(document).ready(function() {
     
     $( ".wrapper" ).css( 'height',$( window ).height() );
     $( ".cuerpo" ).css( 'width',$( window ).width()-203 );
+    $( ".home" ).css( 'width',$( window ).width()-220 );
     
     
     $( ".infoAlbum" ).css( 'width',$( ".cuerpo" ).width()-290 );
     
-    /*var img = document.createElement('img');
-    img.setAttribute('src', 'img/250x250.jpg');
-
-    img.addEventListener('load', function() {
-        console.log("inicia la carga");
-        var vibrant = new Vibrant(img);
-        var swatches = vibrant.swatches()
-        for (var swatch in swatches)
-            if (swatches.hasOwnProperty(swatch) && swatches[swatch])
-                console.log(swatch, swatches[swatch].getHex())
-
-                
-     * Results into:
-     * Vibrant #7a4426
-     * Muted #7b9eae
-     * DarkVibrant #348945
-     * DarkMuted #141414
-     * LightVibrant #f3ccb4
-     
-                console.log(swatches['Muted'].getHex());
-        $(".cabAlbum").css('background',swatches['DarkVibrant'].getHex())
-        $(".cabAlbum").css('color',swatches['LightVibrant'].getHex())
-        $(".cabAlbum h2").css('color',swatches['LightVibrant'].getHex())
-        $(".cabAlbum .detalles").css('color',swatches['LightVibrant'].getHex())
-    });*/
-    
     function llenaTexto(idt){
         $(".cabAlbum h1").html(texts[idt-1]);
         $(".cabAlbum h2").html(artistas[idt-1]);
-        console.log("llena texto: "+idt);
+//        console.log("llena texto: "+idt);
         TweenMax.to($(".cabAlbum h1"), 0.3, { alpha:1});
         TweenMax.to($(".cabAlbum h2"), 0.3, { alpha:1});
     }
@@ -72,7 +47,7 @@ $(document).ready(function() {
         
         $(".table>tbody>#fila"+i+">td>.namePlay").click(function(){
             var IDs = $(this).attr('id');
-            console.log(IDs);
+//            console.log(IDs);
             TweenMax.to($(".conteFoto>img"), 0, { alpha:0});
             TweenMax.to($(".cabAlbum h1"), 0.3, { alpha:0, onComplete:llenaTexto, onCompleteParams:[IDs]});
             TweenMax.to($(".cabAlbum h2"), 0.3, { alpha:0});
@@ -86,10 +61,85 @@ $(document).ready(function() {
         });
     }
     
+    /*$(".menu .btnAlbumes").click(function(){
+        console.log('BOTON ALBUMES');
+        listaAlbumes();
+    });*/
+    
+    listaAlbumes();
+    
+    $('#myModal').on('show.bs.modal', function (e) {
+        TweenMax.to($(".modal .menu2"), 0.3, {left:0});
+    })    
+    $('#myModal').on('hide.bs.modal', function (e) {
+        TweenMax.to($(".modal .menu2"), 0.3, {left:-300});
+    })
 });
+
+
 $( window ).resize(function() {
     $( ".wrapper" ).css( 'height',$( window ).height() );
     $( ".cuerpo" ).css( 'width',$( window ).width()-220 );
+    $( ".home" ).css( 'width',$( window ).width()-220 );
     
     $( ".infoAlbum" ).css( 'width',$( ".cuerpo" ).width()-290 );
 });
+
+
+function listaAlbumes(){
+    console.log('LISTADO DE ALBUMES');
+    $.getJSON( "json/data.json", function( data ) {
+        var alb = [];
+        var art = [];
+        var cov = [];
+        
+        $.each(data, function(key, val) {
+
+
+            for (var i = 0; i < val.length; i++) {
+                alb.push(val[i].album.Nombre);
+                art.push(val[i].album.Artista);
+                cov.push(val[i].album.Cover);
+                
+            }
+
+        });
+
+        
+        console.log(alb);
+        
+        
+        for(var j=0;j<alb.length;j++){
+            var contenedor = document.getElementsByClassName("listAlbum")[0];
+            var albumItem = document.createElement("a");
+            albumItem.setAttribute("class", "btnAlbum");
+
+            var imgFoto = document.createElement("img");
+            imgFoto.setAttribute("src", cov[j]);
+            imgFoto.setAttribute("class", "fotoCover");
+
+            var pAlbum = document.createElement("p");
+            pAlbum.setAttribute("class", "Talbum");
+            pAlbum.setAttribute("id", "albId_"+j);
+
+            var pArtista = document.createElement("p");
+            pArtista.setAttribute("class", "Tartista");
+            pArtista.setAttribute("id", "artId_"+j);
+
+            var divHover = document.createElement("div");
+            divHover.setAttribute("class", "playHover");
+
+            albumItem.appendChild(imgFoto);
+            albumItem.appendChild(pAlbum);
+            albumItem.appendChild(pArtista);
+            albumItem.appendChild(divHover);
+
+            contenedor.appendChild(albumItem);
+
+            $('.btnAlbum #albId_'+j).html(alb[j]);
+            $('.btnAlbum #artId_'+j).html(art[j]);
+            
+        }
+        
+    });
+}
