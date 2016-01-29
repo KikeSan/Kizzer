@@ -1,3 +1,7 @@
+body {
+  background: #EFEFF2;
+}
+
 .wrapper {
   background: #EFEFF2;
   position: relative;
@@ -6,7 +10,7 @@
 .wrapper .menu {
   background: #23232C;
   height: 100%;
-  position: absolute;
+  position: fixed;
   width: 220px;
   z-index: 20;
   /*-----------------*/
@@ -331,8 +335,7 @@
 .wrapper .home .content {
   width: 90%;
   margin: 30px 5% 0 5%;
-  height: 800px;
-  background: #ddd;
+  height: auto;
 }
 
 .wrapper .home .content .banner {
@@ -391,10 +394,102 @@
 .wrapper .home .content .separador {
   margin-top: 40px;
   border-top: 1px solid #bbb;
+  text-align: center;
 }
 
 .wrapper .home .content .separador p {
   background: #EFEFF2;
+  margin-top: -12px;
+  width: 220px;
+  margin-left: -110px;
+  left: 50%;
+  position: absolute;
+  font-size: 16px;
+  color: #666;
+}
+
+.wrapper .home .content .listaPlaylist {
+  margin: 35px 0 35px -12px;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome {
+  height: auto;
+  display: block;
+  padding: 0;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList {
+  padding-left: 12px;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones img {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones .opc {
+  width: 170px;
+  height: 170px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: none;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones .opc .like {
+  width: 20px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  color: #ccc;
+  margin: 10px;
+  float: left;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones .opc .like:hover {
+  color: #fff;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones .opc .mas {
+  float: right;
+  margin-top: 8px;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .opciones:hover .opc {
+  display: block;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .detalle {
+  height: 70px;
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  padding: 17px 15px;
+  float: left;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .detalle .linkNombre {
+  color: #333;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .detalle .linkNombre:hover {
+  color: #007FEB;
+}
+
+.wrapper .home .content .listaPlaylist .playlistHome .itemList .detalle .pArt {
+  font-size: 12px;
+  color: #999;
+  line-height: 18px;
 }
 
 .wrapper .cuerpo {

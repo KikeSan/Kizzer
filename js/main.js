@@ -6,8 +6,12 @@ $(document).ready(function() {
     $( ".cuerpo" ).css( 'width',$( window ).width()-203 );
     $( ".home" ).css( 'width',$( window ).width()-220 );
     
-    
     $( ".infoAlbum" ).css( 'width',$( ".cuerpo" ).width()-290 );
+    
+    
+    $( ".playlistHome>.itemList>.opciones>.opc" ).css( 'width',$( ".playlistHome>.itemList>.opciones>img" ).width() );
+    $( ".playlistHome>.itemList>.opciones>.opc" ).css( 'height',$( ".playlistHome>.itemList>.opciones>img" ).height() );
+    
     
     function llenaTexto(idt){
         $(".cabAlbum h1").html(texts[idt-1]);
@@ -83,6 +87,9 @@ $( window ).resize(function() {
     $( ".home" ).css( 'width',$( window ).width()-220 );
     
     $( ".infoAlbum" ).css( 'width',$( ".cuerpo" ).width()-290 );
+    
+    $( ".playlistHome>.itemList>.opciones>.opc" ).css( 'width',$( ".playlistHome>.itemList>.opciones>img" ).width() );
+    $( ".playlistHome>.itemList>.opciones>.opc" ).css( 'height',$( ".playlistHome>.itemList>.opciones>img" ).height() );
 });
 
 
