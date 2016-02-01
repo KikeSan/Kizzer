@@ -680,6 +680,14 @@ body {
   font-size: 14px;
 }
 
+.wrapper .cuerpo .menuSec .sugerir {
+  background: #007FEB;
+}
+
+.wrapper .cuerpo .menuSec .sugerir:hover {
+  background: #0B66CD;
+}
+
 .wrapper .cuerpo .menuSec .derecha {
   float: right;
   width: 261px;
@@ -723,6 +731,7 @@ body {
 
 .wrapper .cuerpo .listado .table .namePlay {
   color: #888;
+  cursor: pointer;
 }
 
 .wrapper .cuerpo .listado .table .namePlay:hover {

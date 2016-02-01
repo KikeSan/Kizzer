@@ -575,6 +575,12 @@ body{
             span{
                 font-size: 14px;
             }
+            .sugerir{
+                background: #007FEB;
+                &:hover{
+                    background: #0B66CD;
+                }
+            }
             .derecha{
                 float: right;
                 width: 261px;
@@ -602,8 +608,10 @@ body{
                 tbody>tr:hover{background-color:#E8E8EC}
                 tbody>tr{height: 30px;}
                 tbody > tr > td{ padding: 4px 8px; }
+                
                 .namePlay{
                     color: #888;
+                    cursor: pointer;
                     &:hover{
                         color: #007FEB;
                     }
