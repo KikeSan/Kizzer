@@ -2,10 +2,10 @@
     "data": [
         {
             "album": {
-                    "id": 1,
+                    "id": 0,
                     "Nombre": "The Peanuts Movie - Original Soundtrack",
                     "Artista": "Meghan Trainor, Flo Rida, Christophe Beck...",
-                    "Cover": "img/album_1.jpg",
+                    "Cover": "img/album_0.jpg",
                     "lista":[
                         {
                             "canc":"Linus and Lucy",
@@ -56,10 +56,10 @@
         },
         {
             "album": {
-                    "id": 2,
+                    "id": 1,
                     "Nombre": "Continued Silence EP",
                     "Artista": "Imagine Dragons",
-                    "Cover": "img/album_2.jpg",
+                    "Cover": "img/album_1.jpg",
                     "lista":[
                         {
                             "canc":"Radioactive",
@@ -90,10 +90,10 @@
         },
         {
             "album": {
-                "id": 3,
+                "id": 2,
                 "Nombre": "Love",
                 "Artista": "The Beatles",
-                "Cover": "img/album_3.jpg",
+                "Cover": "img/album_2.jpg",
                 "lista":[
                     {
                         "canc":"Because",
@@ -168,10 +168,10 @@
         },
         {
             "album": {
-                    "id": 4,
+                    "id": 3,
                     "Nombre": "Nevermind",
                     "Artista": "Nirvana",
-                    "Cover": "img/album_4.jpg",
+                    "Cover": "img/album_3.jpg",
                     "lista":[
                         {
                             "canc":"Smells Like Teen Spirit",
@@ -218,10 +218,10 @@
         },
         {
             "album": {
-                    "id": 5,
+                    "id": 4,
                     "Nombre": "Visionary",
                     "Artista": "Farruko",
-                    "Cover": "img/album_5.jpg",
+                    "Cover": "img/album_4.jpg",
                     "lista":[
                         {
                             "canc":"Visionary",
@@ -276,10 +276,10 @@
         },
         {
             "album": {
-                    "id": 6,
+                    "id": 5,
                     "Nombre": "Confessions on a Dance Floor",
                     "Artista": "Madonna",
-                    "Cover": "img/album_6.jpg",
+                    "Cover": "img/album_5.jpg",
                     "lista":[
                         {
                             "canc":"Hung Up",
@@ -314,10 +314,10 @@
         },
         {
             "album": {
-                    "id": 7,
+                    "id": 6,
                     "Nombre": "Americana",
                     "Artista": "The Offspring",
-                    "Cover": "img/album_7.jpg",
+                    "Cover": "img/album_6.jpg",
                     "lista":[
                         {
                             "canc":"Welcome",
@@ -356,10 +356,10 @@
         },
         {
             "album": {
-                    "id": 8,
+                    "id": 7,
                     "Nombre": "My everything",
                     "Artista": "Ariana grande",
-                    "Cover": "img/album_8.jpg",
+                    "Cover": "img/album_7.jpg",
                     "lista":[
                         {
                             "canc":"Intro",

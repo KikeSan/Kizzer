@@ -281,7 +281,25 @@ body{
             .banner{
                 width: 100%;
                 height: 250px;
-                background: grey;
+                background: #333;
+                
+                .carousel{
+                    height: 250px;
+                    overflow: hidden;
+                    .carousel-inner{
+                        height: 250px;
+                        img{
+                            width: 100%;
+                            margin-top: -50%;
+                            position: relative;
+                            opacity: .8;
+                        }
+                        .carousel-caption{
+                            bottom: 0;
+                            position: absolute;
+                        }
+                    }
+                }
             }
             .menuP{
                 margin-top: 25px;
@@ -323,7 +341,7 @@ body{
             }
             
             .separador{
-                margin-top: 40px;
+                margin-top: 50px;
                 border-top: 1px solid #bbb;
                 text-align: center;
                 p{
@@ -336,6 +354,17 @@ body{
                     font-size: 16px;
                     color: #666;
                 }
+                .titulo2{
+                    width: 160px;
+                    margin-left: -80px;
+                }
+            }
+            .subtitle{
+                font-size: 11px;
+                text-align: center;
+                margin-top: 10px;
+                color: #999;
+                margin-bottom: -10px;
             }
             
             .listaPlaylist{
@@ -564,7 +593,9 @@ body{
         
         .listado{
             .table{
-                color: #888;
+                color: #888;/*
+                margin-left: 10px;
+                margin-right: 10px;*/
                 tbody > tr:nth-of-type(2n+1) {
                     background-color: #F7F6F7;
                 }
