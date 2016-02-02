@@ -212,7 +212,7 @@ function llenaCanciones(idAlbum){
     trCab.appendChild(tdCabAnade);
     
     contenCancion.append(trCab);
-    
+    var temp = 0.1;
     for(var m=0;m<listaCanciones[idAlbum].length;m++){
 //        console.log(listaCanciones[idAlbum][m].canc);
 //        var contenCancion = document.getElementsByClassName("table")[0];
@@ -265,7 +265,10 @@ function llenaCanciones(idAlbum){
         trFila.appendChild(tdAnade);
 
         contenCancion.append(trFila);
-
+        TweenMax.to($('tbody>#fila'+m), 0, { alpha:0});
+        TweenMax.to($('tbody>#fila'+m), 0.5, { alpha:1, delay:temp});
+        
+        temp += 0.05;
     }
     
 //    console.log("Canciones: "+listaCanciones[idAlbum][0].canc);
