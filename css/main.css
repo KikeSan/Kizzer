@@ -96,11 +96,7 @@ body {
 
 .wrapper .menu .user .icono {
   float: right;
-  padding-top: 20px;
-}
-
-.wrapper .menu .user .icono a span {
-  color: #C2C2CA;
+  padding-top: 22px;
 }
 
 .wrapper .menu .sucripcion {
@@ -163,11 +159,15 @@ body {
 }
 
 .wrapper .menu .cancion .controles .play a {
-  color: #fff;
+  color: #777;
   width: 50px;
   height: 50px;
   display: block;
   float: left;
+}
+
+.wrapper .menu .cancion .controles .play a:hover {
+  color: #fff;
 }
 
 .wrapper .menu .cancion .controles .play a span {
@@ -186,7 +186,7 @@ body {
 }
 
 .wrapper .menu .cancion .controles .reproduccion a {
-  color: #C2C2CA;
+  color: #777;
   width: 25%;
   height: 30px;
   display: block;

@@ -80,13 +80,10 @@ body{
             }
             .icono{
                 float: right;
-                padding-top: 20px;
+                padding-top: 22px;
                 a{
                     @extend .linkCustom; 
                     
-                    span{
-                        color: #C2C2CA;
-                    }
                 }
                 
             }
@@ -140,11 +137,14 @@ body{
                     width: 150px;
                     margin-left: 35px;
                     a{
-                        color: #fff;
+                        color: #777;
                         width: 50px;
                         height: 50px;
                         display: block;
                         float: left;
+                        &:hover{
+                            color: #fff;
+                        }
                         span{
                             font-size: 18px;
                             padding-top: 13px;
@@ -159,7 +159,7 @@ body{
                     height: 20px;
                     width: 100%;
                     a{
-                        color: #C2C2CA;
+                        color: #777;
                         width: 25%;
                         height: 30px;
                         display: block;
