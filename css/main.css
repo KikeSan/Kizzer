@@ -602,7 +602,6 @@ body {
 }
 
 .wrapper .cuerpo .cabAlbum .infoAlbum .detalles .opciones a {
-  @entend .linkBoton;
   width: 100px;
   /*&:hover{
                                 color: #fff;

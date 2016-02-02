@@ -502,7 +502,7 @@ body{
                     .opciones{
                         margin-top: 10px;
                         a{
-                            @entend .linkBoton;
+//                            @extend .linkBoton;
                             width: 100px;
                             /*&:hover{
                                 color: #fff;
